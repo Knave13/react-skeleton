@@ -1,0 +1,30 @@
+{
+  "name": "react-skeleton",
+  "version": "1.0.0",
+  "description": "Skeleton project using react with node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Knave13/react-skeleton.git"
+  },
+  "keywords": [
+    "REACT",
+    "SKELETON"
+  ],
+  "author": "Scott A Gish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Knave13/react-skeleton/issues"
+  },
+  "homepage": "https://github.com/Knave13/react-skeleton#readme",
+  "dependencies": {
+    "babel-preset-react": "^6.23.0",
+    "babelify": "^7.3.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "watchify": "^3.9.0"
+  }
+}
