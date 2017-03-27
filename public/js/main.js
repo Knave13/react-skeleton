@@ -20540,9 +20540,45 @@ module.exports = ListItem;
 
 },{"react":177}],180:[function(require,module,exports){
 var React = require('react');
+var Login = React.createClass({
+    displayName: 'Login',
+
+    render: function () {
+        return React.createElement(
+            'div',
+            null,
+            React.createElement(
+                'h1',
+                null,
+                'Log in'
+            ),
+            React.createElement(
+                'h3',
+                null,
+                'Enter you credentials'
+            )
+        );
+    }
+});
+
+module.exports = Login;
+
+},{"react":177}],181:[function(require,module,exports){
+var React = require('react');
 var ReactDOM = require('react-dom');
 var List = require('./components/List.jsx');
+var Login = require('./components/Login.jsx');
 
-ReactDOM.render(React.createElement(List, null), document.getElementById('ingredients'));
+ReactDOM.render(React.createElement(Login, null), document.getElementById('mainBody'));
+ReactDOM.render(React.createElement(
+  'div',
+  null,
+  React.createElement(
+    'h2',
+    null,
+    'Ingredient List'
+  ),
+  React.createElement(List, null)
+), document.getElementById('ingredients'));
 
-},{"./components/List.jsx":178,"react":177,"react-dom":26}]},{},[180]);
+},{"./components/List.jsx":178,"./components/Login.jsx":180,"react":177,"react-dom":26}]},{},[181]);
